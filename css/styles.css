@@ -1,0 +1,175 @@
+body {
+  font-family: "Montserrat";
+}
+
+#title {
+  background-color: #ff4c68;
+}
+
+.container-fluid {
+  padding: 3% 18% 10%;
+}
+
+h1 {
+  font-family: "Montserrat-Black", sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+h2 {
+  font-family: Monserrat-bold;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: Monserrat-bold;
+  text-align: center;
+}
+/* nav-bar */
+
+.navbar {
+  /* padding-bottom: 4.5rem;we can just change this part get ride of the padding on the left  */
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: Monserrat-light;
+}
+
+/* download button classes */
+.download-button {
+  margin: 5% 10% 5% 0;
+}
+
+.title-image {
+  width: 50%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 20%;
+  /* z-index: -1; */
+}
+
+#features {
+  background-color: #fff;
+  position: relative;
+
+  /* z-index: 1; */
+}
+.boletin {
+  text-align: center;
+  padding: 5%;
+}
+p {
+  color: #8f8f8f;
+}
+
+.icon-image {
+  width: 100%;
+  text-align: center;
+  /**font-size: 3rem; insted of using this i should have used the fa-4x to increase the size of the font awesome automatically**/
+  color: #ef8172;
+  /**padding-bottom: 15px; instead of using padding i should have used marging and rem units as well, i moved this paddig to the carousel-item **/
+  margin-bottom: 1rem;
+}
+.icon-image:hover {
+  color: yellow;
+}
+
+/* testimonial section */
+#testimonials {
+  background-color: #ef8172; /*this will change the background color*/
+  /**padding: 7% 30%; **/ /* i had to adjust this it from 15 to 30% to get the same effect*/
+  text-align: center;
+  color: #fff; /* this will change the color of the text*/
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-item {
+  padding: 7% 30%; /** i moved the padding from the testimonials to here **/
+}
+
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+/* pricing section */
+#pricing {
+  text-align: center;
+  padding: 100px;
+}
+
+#cta {
+  background-color: #ff4c68; /*this will change the background color*/
+  text-align: center; /*the text align has to be applied to the parent container to so everything inside is center*/
+  color: #fff;
+  padding: 7% 30%;
+}
+.esta {
+  font-size: 3.5rem;
+  /*font-family: Monserrat-black;*/ /*the reason why this font family wasn't applied is because i forgot the quotes around the font family*/
+  font-family: "Monserrat-black";
+  /* width: 45%; i didn't need to use this*/
+  line-height: 1.5;
+  /* margin: 0 auto;  i didn't need to use this*/
+  /* padding-top: 50px; i didn't need to use this*/
+  color: #fff;
+}
+
+.play {
+  margin: 5% 5% 5% 0;
+  /* instead of applying the individual class to each i could have just add the previous class to each button */
+}
+#footer {
+  /* background-color: #fff; i didn't need this as well */
+  text-align: center;
+  /* margin-top: 100px; i didnt need this line i could just use the same padding patter to make it look even */
+  padding: 7% 30%;
+}
+
+.icons {
+  /* margin-right: 25px; */
+  /* margin-bottom: 30px; */
+  /* instead of using the code above it's a lot easier to only use this one margin:20px for top and bottom and 10px for left and right */
+  margin: 20px 10px;
+}
+
+.lastlogo {
+  color: #8f8f8f;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: relative;
+    transform: rotate(0);
+    left: 0;
+  }
+}
